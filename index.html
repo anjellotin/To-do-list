@@ -5,19 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>HTML ToDo App</h1>
-
-    <div class="container">
-      <input type="checkbox" name="first-box">
-        <label for="first-box">Learn HTML</label><br>
-      <input type="checkbox" name="second-box">
-        <label for="first-box">Learn CSS</label><br>
-      <input type="checkbox" name="third-box">
-        <label for="first-box">Learn JavaScript</label><br>
-      <input type="checkbox" name="fourth-box">
-        <label for="first-box">Get Hired</label>
+  <!--Top of webpage-->
+  
+    <h1>CSS Todo App</h1>
+    <hr>
+    <div class="input">
+      <input type="text" placeholder="Add todo Here" id="todo-input">
     </div>
+    
+  
+
+  <!--add todos-->
+  <div class="add-container">
+    
+    <h2>Added todos</h2>
+    <div class="boxes">
+      <label for="js">
+        <input type="checkbox" name="js">
+        Learn JavaScript
+      </label>
+      <i class="fa-solid fa-square-check"></i>
+    </div>
+    
+    <div class="boxes">
+      <label for="hired">
+        <input type="checkbox" name="hired">
+        Get Hired
+      </label>
+      <i class="fa-solid fa-square-check"></i>
+    </div>
+    
+  </div>
+  
+  <!--done todos-->
+  <div class="done-container">
+    
+    <h2>Done todos</h2>
+    <div class="boxes">
+      <label for="html">
+        <input type="checkbox" name="html">
+        Learn HTML
+      </label>
+      <i class="fa-solid fa-square-check"></i>
+    </div>
+
+    <div class="boxes">
+      <label for="css">
+        <input type="checkbox" name="css">
+        Learn CSS
+      </label>
+      <i class="fa-solid fa-square-check"></i>
+    </div>
+    
+  </div>
 </body>
 </html>
